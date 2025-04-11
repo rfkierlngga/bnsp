@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
   res.json(data);
 });
 
-router.post("/", async (req, res) => {
+router.post("/daftar", async (req, res) => {
     try {
       const pendaftarBaru = await Pendaftar.create(req.body);
       res.status(201).json(pendaftarBaru);
